@@ -1,0 +1,15 @@
+
+ 
+ CShtml 
+ 
+@Html.TextBoxFor(m => m.Date, "{0:d}", new { @class = "form-control datepicker" })
+
+{0:d} - getting the first element just to show the date and exclude time. 
+
+and stcript should be added onto the header. 
+
+   <script>
+        $('input.datepicker').datepicker({
+            format: 'dd/mm/yyyy'
+        });
+    </script>
